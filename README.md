@@ -2,8 +2,6 @@
 
 ## Quickstart Brain js
 
-exemple project with Iris dataset
-
 Arborescence:
 	
     - iris_brainjs (folder)
@@ -77,5 +75,25 @@ server.js (file)
 		//Afficher le résultat dans la console
 		console.log(newData);
 	});
+
+
+server.js (file)
+
+	// Config du training
+
+    const trainConfig = {
+        errorTresh: 0.001, // Niveau de training
+        iterations: 30000, // Nombre de boucle pour le training
+        log:true, // Affichage de compte rendus(log) pendant le training
+        logPeriod: 100, // Durée de la periode (en fonction itérations) entre chaque log
+    }
+
+    // ...
+
+    // Train the network
+    NeuralNetwork.train(trainingData, trainConfig); 
+
+
+
 
 

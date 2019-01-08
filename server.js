@@ -4,6 +4,15 @@ const Brain = require('brain.js');
 // Créer un réseau de neurones
 const NeuralNetwork = new Brain.NeuralNetwork();
 
+// Config du training
+
+const trainConfig = {
+    errorTresh: 0.001, // Niveau de training
+    iterations: 30000, // Nombre de boucle pour le training
+    log:true, // Affichage de compte rendus(log) pendant le training
+    logPeriod: 100, // Durée de la periode (en fonction itérations) entre chaque log
+}
+
 // Définir les données d'entraînement
 const trainingData = [
     { input: { age: 0.68, earning: 0.168, schooling: 0.19 }, output: { diligent: 1 } },
@@ -36,7 +45,7 @@ const testData = [
 // console.log(NeuralNetwork);
 
 // Train the network
-NeuralNetwork.train(trainingData);
+NeuralNetwork.train(trainingData, trainConfig);
 
 // Tester le réseau
 
