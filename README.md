@@ -16,12 +16,14 @@ CLI
 
 server.js (file)
 
+    ```javascript
 	// Importer BrainJS
 	const  Brain  =  require('brain.js');
 	// Créer un réseau de neurones
 	const  NeuralNetwork  =  new Brain.NeuralNetwork();
 	// Afficher le réseau dans la console
-	console.log(NeuralNetwork);
+    console.log(NeuralNetwork);
+    ```
 
 
 CLI
@@ -33,6 +35,7 @@ CLI
 
 server.js (file)
 
+    ```javascript
 	// Définir les données d'entraînement
     const trainingData = [
         { input: { age: 0.68, earning: 0.168, schooling: 0.19 }, output: { diligent: 1 } },
@@ -74,11 +77,13 @@ server.js (file)
 		
 		//Afficher le résultat dans la console
 		console.log(newData);
-	});
+    });
+    ```
 
 
 server.js (file)
 
+    ```javascript
 	// Config du training
 
     const trainConfig = {
@@ -91,7 +96,8 @@ server.js (file)
     // ...
 
     // Train the network
-    NeuralNetwork.train(trainingData, trainConfig); 
+    NeuralNetwork.train(trainingData, trainConfig);
+    ```
 
 
 
