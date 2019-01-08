@@ -1,4 +1,4 @@
-# Javascript ML with Julien Noyer
+# Javascript ML
 
 ## Quickstart Brain js
 
