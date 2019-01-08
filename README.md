@@ -5,7 +5,8 @@
 exemple project with Iris dataset
 
 Arborescence:
-	- iris_brainjs (folder)
+	
+    - iris_brainjs (folder)
 	- - server.js (file)
 
 
